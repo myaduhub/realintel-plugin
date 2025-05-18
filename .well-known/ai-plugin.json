@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "RealIntel",
+  "name_for_model": "real_intel",
+  "description_for_human": "Analyze real estate listings and reveal insights.",
+  "description_for_model": "Plugin that analyzes real estate listings and provides investment insights and summaries.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://myaduhub.com/openapi.yaml"
+  },
+  "logo_url": "https://myaduhub.com/logo.png",
+  "contact_email": "hi@myaduhub.com",
+  "legal_info_url": "https://myaduhub.com/terms.html"
+}
