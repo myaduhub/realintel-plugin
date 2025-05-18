@@ -1,0 +1,30 @@
+openapi: 3.0.1
+info:
+  title: RealIntel API
+  description: API for analyzing real estate listings
+  version: '1.0'
+servers:
+  - url: https://myaduhub.com
+paths:
+  /analyze:
+    get:
+      summary: Analyze a real estate listing
+      parameters:
+        - in: query
+          name: url
+          schema:
+            type: string
+          required: true
+          description: URL of the Zillow or MLS listing
+      responses:
+        '200':
+          description: Analysis results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  investment_score:
+                    type: number
+                  notes:
+                    type: string
